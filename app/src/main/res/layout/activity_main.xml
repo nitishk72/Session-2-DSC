@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.companyname.session2.MainActivity">
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:id="@+id/first_num"
+        android:hint="@string/num_1"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_margin="30dp"
+        android:hint="@string/num_2"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_num"
+        android:layout_toEndOf="@id/first_num"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/button"
+        android:text="Multiply"/>
+
+</RelativeLayout>
